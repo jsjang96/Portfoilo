@@ -30,15 +30,15 @@
 >MySQL / mongoDB / NginX / gunicorn <br>
 >Google Cloud Storage / Google Cloud Big Query <br>
 >
->[프로젝트 상세 설명](https://github.com/romantiveloper/Alsong-Dlsong) 참고
+>[프로젝트 상세 설명](https://github.com/happinhwa/final) 참고
 
 ---
 
-### 2. [소상공인의 효과적인 VOC 분석을 위한 Doc2Vec 활용](https://github.com/tbtgmltn97/portfolio/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/VOC.md)
->개발 기간: 2022.06.15 ~ 2022.06.30  
+### 2. [카페 창업 지역 추천](https://github.com/tbtgmltn97/portfolio/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/VOC.md)
+>개발 기간: 2022.03.14 ~ 2022.03.17  
 >
 >기술 스택:  
->Python / Doc2Vec / K-Means    
+>Python / Pandas
 >  
 >[프로젝트 상세 설명](https://github.com/tbtgmltn97/VOC-kmeans) 참고
 
@@ -48,8 +48,8 @@
 >개발 기간: 2022.05.15 ~ 2022.05.19  
 >
 >기술 스택:  
->Python / CNN     
+>Python / CNN / Django 
 >  
->[프로젝트 상세 설명](https://github.com/tbtgmltn97/CNN-project) 참고
+>[프로젝트 상세 설명](https://github.com/jsjang96/CNN_project) 참고
 
 ---
