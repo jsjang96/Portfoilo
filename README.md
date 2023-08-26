@@ -14,7 +14,7 @@
 
 ## :pushpin: Contact
 - 이메일: jsjang96@gmail.com
-- 블로그: https://blog.naver.com/jsjang96
+- 블로그: https://blog.naver.com/pik2223
 - 깃헙: https://github.com/jsjang96
 
 </br>
