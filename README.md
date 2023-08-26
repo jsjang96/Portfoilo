@@ -44,12 +44,12 @@
 
 ---
 
-### 3. [닮은꼴 추출기](https://github.com/tbtgmltn97/portfolio/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/cnn-project.md)
+### 3. [닮은꼴 추출기](https://github.com/jsjang96/Portfoilo/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/CNN_project.md)
 >개발 기간: 2022.05.15 ~ 2022.05.19  
 >
 >기술 스택:  
 >Python / CNN / Django 
 >  
->[프로젝트 상세 설명](https://github.com/jsjang96/CNN_project) 참고
+>[프로젝트 상세 설명](https://github.com/jsjang96/포트폴리오/CNN_project.md) 참고
 
 ---
