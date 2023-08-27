@@ -40,7 +40,7 @@
 >기술 스택:  
 >Python / Pandas
 >  
->[프로젝트 상세 설명]() 참고
+>[프로젝트 상세 설명](https://github.com/jsjang96/cafe_recommend.git) 참고
 
 ---
 
