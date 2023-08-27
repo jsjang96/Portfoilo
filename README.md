@@ -34,7 +34,7 @@
 
 ---
 
-### 2. [카페 창업 지역 추천]()
+### 2. [카페 창업 지역 추천](https://github.com/jsjang96/Portfoilo/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/cafe.md)
 >개발 기간: 2022.03.14 ~ 2022.03.17  
 >
 >기술 스택:  
