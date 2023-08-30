@@ -41,10 +41,10 @@
 <br>
 <br>
 
-## 서비스 화면
+## 결과
 
-<img src="https://postfiles.pstatic.net/MjAyMzA4MjFfMjY0/MDAxNjkyNTg4MDA0MTI0.EATGrNVlbOpqUAwbcysr52qyHa-2bNscrQdNAajUrbMg.8VSqDrVA-G6gVuWABaifArK3BFSG0E_UmMVIm8_6hN4g.PNG.tbtgmltn97/image.png?type=w773"/>
-<img src="https://postfiles.pstatic.net/MjAyMzA4MjFfMjgg/MDAxNjkyNTg4MDM2MDM1.orGcMx7NB-0m-1XlqHb2u9EOjqBiBlw_dvGRXkSXv1cg.xv7fEjOa17Xd3njcuIu6UenDwhUHFzhAzBj_xFtbXzwg.PNG.tbtgmltn97/image.png?type=w773"/>
+<img src="https://github.com/jsjang96/images/blob/master/cafe_image1.png"/>
+<img src="https://github.com/jsjang96/images/blob/master/cafe_image2.png"/>
+<img src="https://github.com/jsjang96/images/blob/master/cafe_image3.png"/>
 <br>
 
-<br>
