@@ -25,12 +25,15 @@
   - 엔코아에서 진행하는 개발자 양성 교육 과정
   - 6개월 동안 코딩 공부 및 3개 프로젝트 진행
   - 페어 프로그래밍, 팀 프로젝트를 통한 협업 경험2
+
+<br>
  
 ## :pushpin: Education
 - 고려대학교
   - 2016.03. ~ 2023.02.
   - 수학과
 
+<br>
 
 ## :pushpin: Projects
 ### 1. [MOOCHU](https://github.com/jsjang96/Portfoilo/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/MOOCHU.md)
