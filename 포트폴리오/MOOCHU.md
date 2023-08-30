@@ -141,12 +141,6 @@ src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%
     서버를 띄우기 전 local에서 mongoDB를 썼을 때 pymongo를 통해 django와 연동을 했습니다.
     mongoDB를 서버에 띄우고 django와 연동하는 것은 local에서 하는 것보다 훨신 수월했습니다.
     	
-	실제 서비스를 위한 데이터, 사용자에 대한 데이터 적재 => PostgreSQL
-	로그 데이터 임시 저장 => Redis
-	로그 데이터를 모두 적재 => MongoDB
-
- 	저희 서비스는 도커라이징을 통한 배포를 하였으나, DB 서버는 보수적인 관리를 위해 도커라이징을 하지 않았습니다.
-
 ### 3. django에서 영화 리스트 페이지 구현
   <br>
 
