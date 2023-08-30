@@ -44,6 +44,7 @@
 - Front-End : HTML / CSS(SCSS) / JS(ES6)
 - Back-End : Django / Docker / Airflow / ELK스택 / GCP
   - DBMS : Mysql / MongoDB / Kafka
+- Collaboration & Tools : Slack / Discord / VS code / Git, Github / Jira, Confluence
 
 <br>
 
