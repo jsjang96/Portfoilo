@@ -99,7 +99,7 @@ src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%
 - kafka와 logstash와 연동은 됐지만 싱크 커넥터를 통해 BigQuery에 데이터가 안들어감.
 <br>
 
-### 4-1. python 코드로 대체 (문제 해결)
+#### 4-1. python 코드로 대체 (문제 해결)
 - python에서 임의로 꺼내줄 수 있는 코드를 짜서 BigQuery에 보내줌.
 <br>
 
