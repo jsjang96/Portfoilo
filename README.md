@@ -2,13 +2,17 @@
 <img src="https://capsule-render.vercel.app/api?type=rounded&color=auto&height=200&section=header&text=portfolio&fontSize=90" />
 
 
-<div align=left><h2> 자기소개 </h2></div>
-<div align=left>
-수학과를 전공하여
+## :pushpin: 자기소개
+- 수학과를 전공하여
 현재 <b>데이터 엔지니어링</b>을 공부하고 있는 <b>장진수</b>입니다.<br>
   <br>
-데이터 분야에 관심, 흥미가 있어 수학과임에도 불구하고 데이터 엔지니어링을 공부하기 위해 교육을 받았습니다.<br>
+- 데이터 분야에 관심, 흥미가 있어 수학과임에도 불구하고 데이터 엔지니어링을 공부하기 위해 교육을 받았습니다.<br>
   <br>
+- 무슨 일이 주어졌을 때 해결하고자 하는 방법을 찾으려고 합니다.<br>
+  <br>
+- 데이터를 가공하는 것과 데이터의 흐름을 전달하는 것을 좋아합니다.<br>
+  <br>
+- 저에게 맡겨진 일은 꼭 해야한다는 책임감이 있어서 어떻게든 일을 이루려고 합니다.
 </div>
 </br>
 
@@ -24,7 +28,7 @@
   - 기간 : 2023.02.13 ~ 2023 08.11
   - 엔코아에서 진행하는 개발자 양성 교육 과정
   - 6개월 동안 코딩 공부 및 3개 프로젝트 진행
-  - 페어 프로그래밍, 팀 프로젝트를 통한 협업 경험2
+  - 페어 프로그래밍, 팀 프로젝트를 통한 협업 경험
 
 </br>
  
@@ -32,6 +36,14 @@
 - 고려대학교
   - 2016.03. ~ 2023.02.
   - 수학과
+
+<br>
+
+## :pushpin: Stacks
+- 언어 : Python
+- Front-End : HTML / CSS(SCSS) / JS(ES6)
+- Back-End : Django / Docker / Airflow / ELK스택 / GCP
+  - DBMS : Mysql / MongoDB / Kafka
 
 <br>
 
