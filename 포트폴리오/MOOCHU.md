@@ -51,6 +51,7 @@
 ![DB ERD](https://github.com/jsjang96/images/blob/master/MOOCHU_erd.png)
 
 <br>
+
 ## 핵심 기능
 이 서비스의 핵심 기능은 **추천 서비스 기능**입니다. <br>
 사용자가 즐겨서 보는 영화 장르, 영화 리스트를 기반으로 새로운 영화를 추천해주는 서비스입니다. <br>
