@@ -8,9 +8,7 @@
 ## :pushpin: Contact
 
 - 전화번호 : 010-4666-0928
-  
 - 이메일: jsjang96@gmail.com
-  
 - 깃헙: https://github.com/jsjang96
 <br>
 
