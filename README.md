@@ -3,7 +3,7 @@
 <br>
 <br>
 
-<img src="https://github.com/jsjang96/images/blob/master/%EC%9E%A5%EC%A7%84%EC%88%98.png" alt="장진수 이미지"  width="15%%" align="left">
+<img src="https://github.com/jsjang96/images/blob/master/%EC%9E%A5%EC%A7%84%EC%88%98_%EC%82%AC%EC%A7%84.png" alt="장진수 이미지"  width="15%%" align="left">
 
 ## :pushpin: Contact
 
