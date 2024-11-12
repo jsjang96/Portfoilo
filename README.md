@@ -42,9 +42,9 @@
   - 페어 프로그래밍, 팀 프로젝트를 통한 협업 경험
  
 - 커머스웨어(주) :
-- 기간 : 2023.09.20 ~ 현재
-- 솔루션을 보유한 업체이며 자바, js, oracle, linux, jenkins, git, spring, spring boot, spring batch 기술을 기반으로 하여 개발
-- 주 업무 : 스프링 배치 및 프로시저 개발(스프링 배치 담당자), extjs 기반으로 한 프로그램 개발, 정산
+  - 기간 : 2023.09.20 ~ 현재
+  - 솔루션을 보유한 업체이며 자바, js, oracle, linux, jenkins, git, spring, spring boot, spring batch 기술을 기반으로 하여 개발
+  - 주 업무 : 스프링 배치 및 프로시저 개발(스프링 배치 담당자), extjs 기반으로 한 프로그램 개발, 정산
 
 </br>
  
@@ -64,7 +64,7 @@
 - 언어 : Python, Java
 - Front-End : HTML / CSS(SCSS) / JS(ES6, ExtJs)
 - Back-End : Django / Docker / Airflow / ELK스택 / GCP / Spring / Spring-Batch / Spring-Boot
-  - DBMS : Mysql / Oracle / PostgreSql / MongoDB
+- DBMS : Mysql / Oracle / PostgreSql / MongoDB
 - Collaboration & Tools : Slack / Discord / VS code / Eclipse / Git, Github / Jira, Confluence
 
 <br>
