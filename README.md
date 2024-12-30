@@ -112,7 +112,7 @@
 ---
 ## :pushpin: Porfoilo
 ### 커머스웨어 업무
-### 1. [DLC(Data Life Cycle)로 인한 5년 이전 데이터 삭제 프로시저 개발]
+### 1. [DLC(Data Life Cycle)로 인한 5년 이전 데이터 삭제 프로시저 개발](https://github.com/jsjang96/Portfoilo/blob/f95f365b0383e6d1a75eb61441710bb304afc905/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/DLC.md)
 > 기술 스택: <br>
 > Oracle(프로시저) / API / Spring <br>
 > 방송통신 법으로 인하여서 현재로부터 5년 이전 데이터 삭제 프로시저 개발 <br>
