@@ -121,7 +121,7 @@
   > 현재 삭제 진행중인 년/월을 기준으로 12개월 전부터 2개월 후의 데이터까지 노출 <br>
 > 서버 로그를 통한 모니터링 진행 <br>
 
-### 2. [상품속성별매출을 보여주는 프로그램 개발]
+### 2. [상품속성별매출을 보여주는 프로그램 개발](https://github.com/jsjang96/Portfoilo/blob/cb9a2f4bf6457243d7bb6a013b3afcdfbcd269f1/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/authManageBatch.md)
 > 기술 스택 : <br>
 > ExtJs / Java / Spring / MyBatis / Oracle <br>
 > 상품의 속성을 기준으로 하여 매출을 보여줄 수 있는 프로그램 개발
