@@ -36,11 +36,10 @@
 90일 이상 미접속 사용자 조회 후 접근 권한 삭제는 데이터의 정합성 때문에 하나의 오류가 떴을 때 통째로 rollback을 시켜주는 tasklet 방식을 이용하여 개발했습니다.
 
 <details>
-<summary><b>전체 아키텍처 펼치기</b></summary>
+<summary><b>프로그램별 사용자 접근자 조회 및 최근 접속 날짜 업데이트</b></summary>
 <div align="center" markdown="1">
-	<img src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%981.png"/>
-	<img src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%982.png"/>
-	<img
+	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessHisMngConfig_1.PNG"/>
+	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessHisMngConfig_2.PNG"/>
 src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%983.png"/>
 </div>
 </details>
