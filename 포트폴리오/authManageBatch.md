@@ -32,16 +32,23 @@
 특정 프로그램에 접근한지 90일이 지난 사용자를 조회하여 권한을 자동으로 삭제를 해주도록 하였습니다. <br>
 리눅스의 크론탭을 이용하여 매일 18시에 배치가 돌 수 있도록 하였고 배치 후 모니터링까지 진행했습니다.<br>
 
-프로그램별 사용자 접근 조회 및 최근 접속 날짜 업데이트는 Chunk방식을 이용하여 개발했습니다. 오류가 떴을 때 통째로 rollback을 할 필요가 없다고 판단했기 때문에 건마다 commit을 찍어주었습니다. <br>
-90일 이상 미접속 사용자 조회 후 접근 권한 삭제는 데이터의 정합성 때문에 하나의 오류가 떴을 때 통째로 rollback을 시켜주는 tasklet 방식을 이용하여 개발했습니다.
-
 <details>
 <summary><b>프로그램별 사용자 접근자 조회 및 최근 접속 날짜 업데이트</b></summary>
 <div align="center" markdown="1">
 	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessHisMngConfig_1.PNG"/>
 	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessHisMngConfig_2.PNG"/>
-src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%983.png"/>
+	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/selectUserAccessHisMng.png"/>
+	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/updateUserAccessHisMng.png"/>
 </div>
+위에서 보면 reader을 통하여서 프로그램별 사용자 접근 날짜를 조회하여 업데이트를 시켜주는 자동화 프로그램입니다. <br>
+프로그램별 사용자 접근 조회 및 최근 접속 날짜 업데이트는 Chunk방식을 이용하여 개발했습니다. 오류가 떴을 때 통째로 rollback을 할 필요가 없다고 판단했기 때문에 건마다 commit을 찍어주었습니다. <br>
+
+<div align="center" markdown="1">
+	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessAuthMngConfig.png"/>
+	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessAuthMngTasklet.png"/>
+</div>
+
+90일 이상 미접속 사용자 조회 후 접근 권한 삭제는 데이터의 정합성 때문에 하나의 오류가 떴을 때 통째로 rollback을 시켜주는 tasklet 방식을 이용하여 개발했습니다.
 </details>
 <br>
 
