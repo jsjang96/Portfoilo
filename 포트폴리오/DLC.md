@@ -32,15 +32,13 @@
 
 아래는 **DLC 개발**에 대한 첨부파일입니다.
 
-<details>
-<summary><b>전체 아키텍처 펼치기</b></summary>
+<summary><b>DLC 프로세스</b></summary>
 <div align="center" markdown="1">
-	<img src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%981.png"/>
-	<img src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%982.png"/>
-	<img
-src="https://github.com/jsjang96/images/blob/master/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%983.png"/>
+	<img src="https://github.com/jsjang96/images/blob/0e352c49eac92d566f1e8dc58feeb66604784e10/CUR_TG_DATA.png"/>
+	<img src="https://github.com/jsjang96/images/blob/0e352c49eac92d566f1e8dc58feeb66604784e10/DLCCheck.png"/>
+	<img src="https://github.com/jsjang96/images/blob/0e352c49eac92d566f1e8dc58feeb66604784e10/DLC_KEY_DT_COLLECT.png"/>
+	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/CUR_DL_DATA.png"/>
 </div>
-</details>
 <br>
 
 ## 트러블 슈팅
