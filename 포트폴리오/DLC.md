@@ -41,6 +41,25 @@
 	<img src="https://github.com/jsjang96/images/blob/0e352c49eac92d566f1e8dc58feeb66604784e10/DLC_KEY_DT_COLLECT.png"/>
 	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/CUR_DL_DATA.png"/>
 </div>
+
+위 사진들을 통해 봤을 때 주문 날짜를 기준으로 5년 전의 데이터들을 여러 검증을 한 후에 MNT_COL_DT라는 테이블에 INSERT를 하여 수집을 하였습니다. <br>
+
+후에 MNT_COL_DT에 있는 수집한 데이터들을 MOD함수를 통하여서 개수를 분산화하여 삭제를 진행해주는 커서를 작성하였습니다. <br>
+
+테이블 데이터 삭제를 하기 전에 SALE_TEST라는 계정에 삭제 대상 테이블을 똑같이 생성하여 백업을 시킨 후에 실제로 쓰이고 있는 테이블의 데이터를 삭제했습니다. <br>
+
+이 코드는 주문번호(ORDER_NO)를 쓰고있는 테이블들의 데이터를 지운것이고 배송식별번호, 임시상품코드를 기준으로 하여서도 삭제 프로시저를 개발하여 삭제했습니다.
+
+다음 사진들은 DLC의 진척율을 매일 담당자에게 이메일을 보내는 REST API 개발 건이고 소스와 실제 이메일을 보내는 템플릿입니다.
+
+<div align="center" markdown="1">
+	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressSource.png"/>
+	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressSource2.jpg"/>
+	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressSource3.png"/>
+	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressSourceQuery.png"/>
+	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressEmail.png"/>
+</div>
+
 <br>
 
 ## 트러블 슈팅
