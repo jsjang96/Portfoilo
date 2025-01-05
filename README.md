@@ -1,3 +1,9 @@
+<img src="https://capsule-render.vercel.app/api?type=rounded&color=auto&height=200&section=header&text=portfolio&fontSize=90" />
+<br>
+<br>
+
+<img src="https://github.com/jsjang96/images/blob/master/%EC%9E%A5%EC%A7%84%EC%88%98_%EC%82%AC%EC%A7%84.png" alt="장진수 이미지"  width="15%%" align="left">
+
 ## :pushpin: Porfoilo
 ### 학원 Project
 ### 1. [MOOCHU](https://github.com/jsjang96/Portfoilo/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/MOOCHU.md)
