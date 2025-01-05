@@ -126,7 +126,7 @@
 > ExtJs / Java / Spring / MyBatis / Oracle <br>
 > 상품의 속성을 기준으로 하여 매출을 보여줄 수 있는 프로그램 개발
 
-### 3. [프로그램별 사용자 접근 권한 업데이트 및 삭제 배치 개발]
+### 3. [프로그램별 사용자 접근 권한 업데이트 및 삭제 배치 개발](https://github.com/jsjang96/Portfoilo/blob/8f2a0c31c9b0510ecdd684e314ce4d1ae066b2ad/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/authManageBatch.md)
 > 기술 스택: <br>
 > Java / Spring Batch / MyBatis / Oracle <br>
 > 어떤 사용자가 어느 프로그램에 접근을 했는지 파악 후 권한 부여 및 삭제 배치 개발
