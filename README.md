@@ -18,17 +18,7 @@
 
 ---
 
-### 2. [카페 창업 지역 추천](https://github.com/jsjang96/Portfoilo/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/cafe.md)
->개발 기간: 2023.03.14 ~ 2023.03.17  
->
->기술 스택:  
->Python / Pandas
->  
->[프로젝트 상세 설명](https://github.com/jsjang96/cafe_recommend.git) 참고
-
----
-
-### 3. [닮은꼴 추출기](https://github.com/jsjang96/Portfoilo/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/CNN_project.md)
+### 2. [닮은꼴 추출기](https://github.com/jsjang96/Portfoilo/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/CNN_project.md)
 >개발 기간: 2023.05.15 ~ 2023.05.19  
 >
 >기술 스택:  
