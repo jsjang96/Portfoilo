@@ -38,67 +38,63 @@
    
    	 
 
-<summary><b>프로그램별 사용자 접근자 조회 및 최근 접속 날짜 업데이트</b></summary>
+<summary><b>상품 속성별 매출 현황 소스</b></summary>
 <div align="center" markdown="1">
-	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessHisMngConfig_1.PNG"/>
-	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessHisMngConfig_2.PNG"/>
-	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/selectUserAccessHisMng.png"/>
-	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/updateUserAccessHisMng.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/Program.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/goodsPropertiesRetrieveController.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesControllerJava.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesService.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesServiceImpl.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesProcess.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesDAO.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/mapper1.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/mapper2.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/mapper3.png"/>
+	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/mapper4.png"/>
 </div>
 <br>
 
 ## 설명
-	 해당 Job의 Step에서 chunk 방식으로 개발을 진행했습니다. 오류가 났을 때 통째로 rollback을 할 필요가 없다고 판단했기 때문에
-  	 chunk방식을 선택을 했고 건마다 commit을 찍어주었습니다.
+	프로그램에서 헤더 쪽에 보면 멀티상품조회, 멀티업체조회가 있습니다. 이거는 한번에 여러개의 상품, 업체들을 조회해볼 수 있는 기능입니다.
+ 
+ 	이걸 통해서 현업들은 현재 어떤 업체가 어떤 상품을 팔고 실적을 어떻게 내고 있는지 파악할 수 있습니다.
+  
+	더 나아가서 현업에서 대,중,소,세분류별로도 보고 싶다고 하여 조회 조건에 추가를 하였습니다.
 
-  	 위에서 보면 reader을 통하여서 프로그램별 사용자 접근 날짜를 조회하여 writer로 업데이트를 시켜주는 자동화 프로그램입니다.  
-	 옵티마이저가 인덱스를 잘 찾아서 갈 수 있도록 힌트를 주었고 각 사이트 별로 최근 접속 이력을 조회하고 업데이트를 진행했습니다.
+ 	controller.js에서 헤더 조건에 해당하는 데이터를 가져와서 파라미터를 넘겨주었습니다. 그리고 응답받은 데이터를 directStoreCall 메소드를 이용하여 
+  
+  	해당하는 grid에 데이터를 뿌려주었습니다. 
+   
+	그리고 Controller.java에서는 데이터를 세팅을 해주었습니다. 보시는 것과 같이 ComUtil.injFilterToArr라는 것은 아래 사진과 같이 띄어쓰기를 하면
+ 
+ 	상품코드나 업체코드를 구별시켜주는 필터링 유틸리티입니다. 콤마 부분로 구별해주는 것은 쿼리에서 작업을 진행했습니다.
+<img src="https://github.com/jsjang96/images/blob/5d452e8e9f6e5944b917fb27b5d8906d651eb1cd/multientpretrieve.png"/>
+<img src="https://github.com/jsjang96/images/blob/5d452e8e9f6e5944b917fb27b5d8906d651eb1cd/multigoodsproperties.png"/>
 
-   	 매일 18시에 이 배치가 돌 수 있도록 스케줄 잡에 등록을 하였고 리눅스를 통해 모니터링을 진행했습니다.
-	
- 	 배치 개발을 처음 진행했던 개발건이라 의미가 있고 공부를 많이 했던 기억이 납니다. chunk가 무엇인지, tasklet이 무엇인지
- 	 그리고 배치가 어떻게 실행이 되고 메타 테이블에 어떻게 데이터가 들어가는지도 파악을 하면서 진행을 했습니다.
- 	 이 개발을 통하여서 제가 배치 개발에 대한 재미를 느낄 수 있었고 새로운 것을 알아가는 것에 대한 쾌감을 느낄 수 있었습니다.
+ 	그 후로 Service, ServiceImpl(구현체)를 타고 갑니다. ServiceImpl에서 트랜잭션을 관리하는 만약 조회기능이다 하면 @ReadTx 트랜잭션을 붙여줬고
+  	I,U,D기능이다 하면 @ProcessTx를 붙여줘서 트랜잭션 관리를 해주었습니다.
+
+   	그 뒤로는 Process, DAO, mapper을 거치게 됩니다.
+    
+    mapper에서의 조건들을 보면 if문을 통하여서 넘겨진 파라미터 중에서 해당되는 데이터가 있으면 쿼리가 타게끔 진행을 해주었습니다.
+     
+    그리고 foreach함수에서 위에서 말씀드린 것처럼 멀티상품, 밀터업체 조회할 때 콤마로 구별하기 위해서 seperator을 콤마로 지정해두었습니다.
 <br>
-<br>
-
-<summary><b>90일 이상 미접속 사용자 조회 후 접근 권한 삭제</b></summary>
-<div align="center" markdown="1">
-	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessAuthMngConfig.png"/>
-	<img src="https://github.com/jsjang96/images/blob/84946fb44339b9f6cc1c0460935c5d4835cf3362/UserAccessAuthMngTasklet.png"/>
-</div>
-<br>
-
-## 설명
-	해당 Job의 Step에서 tasklet 방식으로 개발을 진행했습니다. 데이터 정합성 때문에 오류가 났을 때 통쨰로 rollback을 해줄 필요가 있다고
- 	판단을 했기 때문에 tasklet 방식을 선택을 했고 통 commit을 해주었습니다.
-
-  	위에서 보면 DB에서 "useYn" 을 DB에서 가져와서 "1"이면 배치를 실행하고 "0"이면 SKIP을 할 수 있도록 진행했습니다.
-   	이 배치를 배포를 했는데 배치를 실행하고 싶지 않으면 DB에서 "1"을 "0"으로 바꿔주면 SKIP할 수 있습니다.
-
-	이 배치에서는 90일 이상 접속하지 않은 사용자들을 조회를 한 후에 각 프로그램에 접근할 수 있는 권한을 삭제하는 배치입니다.
-
-	이 배치도 매일 18시에 돌 수 있도록 스케줄 잡에 등록을 하였고 리눅스를 통해 모니터링을 진행했습니다.
-
-	이번 배치 개발을 하면서 내가 전에 배치를 개발하면서 공부했던 것들을 토대로 개발을 진행하였을 때 성취감이 있었고 
- 	다른 방법으로 배치를 개발을 하니 더 재밌었고 시간 흐르는지도 모른채 개발을 했었습니다.
 <br>
 
 ## 트러블 슈팅
 
-### 1. 쿼리 처리 속도 이슈
-	개발 후 배포를 하였는데 예상 시간보다 훨씬 오래동안 배치가 돌았습니다. 그래서 오류 문자가 오게 되었고 세션이 끊기게 되어서 FAILED처리가 되었습니다.
+### 1. 멀티상품코드, 멀티업체코드 조회 후 다시 클릭 시 조회했던 코드들이 그대로 존재
+	멀티상품코드, 멀티업체코드를 이용하요 조회를 한 후에 다시 이용하기 위해서 버튼을 눌렀을 때 이전에 조회했던 코드들이 계속 남아있었습니다.
  
- 	개발을 하고 TEST를 할 때는 인덱스를 잘 타고 속도도 빨랐지만 서버에 배포 후에 옵티마이저가 인덱스를 찾지 못하는 현상이 발견돼서 처리 속도가 느려졌습니다.
+ 	Controller.js단에서 파라미터를 안넘기게끔 하는 것이 맞다는 판단 하에 directStoreCall후에 후처리를 해주는 callback함수에서
 
-  	쿼리에 인덱스 힌트를 추가를 하였고 핫배포를 진행했습니다. 이것을 통하여서 알게된 것은 개발을 할 때 인덱스가 탈 수 있지만 서버에서는 옵티마이저가 인덱스를
-
-   	찾지 못하는 현상이 발견될 수 있다는 것을 알게 됐고 다음에 개발할 때는 힌트를 추가하는게 좋다는 것으로 판단되었습니다.
+  	조회한 후에 해당 팝업에 코드들을 clear해주는 작업을 진행했습니다.
 
 
 ## 느낀점
 
-### 1. 스프링배치에 대한 관심과 호기심
+### 1. 성취감
 	스프링배치에 대해서 모르는 것이 많았고 처음 개발한 것이었습니다. 무엇이든 처음하는 것, 모르는 것을 하는 것에 있어서 막연한 두려움이 있었습니다.
  
  	하지만 스프링배치 관련 책, 자료들을 보며 어떤 구조로 되어 있고 어떤 흐름으로 배치가 실행이 되는지 공부하면서 배치 개발을 진행했습니다.
@@ -110,7 +106,7 @@
     개발한 배치에 오류가 나면 원인 파악을 해주고 보고를 하였고 매주 배치 배포를 진행하였습니다. 
   	
 
-### 2. 디버깅 속도와 판단력
+### 2. 공부의 필요성
 	쿼리 처리 속도가 늦어져서 배치가 안 끝난 것에 있어서 굉장한 당황을 했었습니다. 개발했을 때에는 처리가 늦지 않았는데 배포를 하고 나서는 늦어짐으로 인해
  
 	주말에 원격을 붙어서 디버깅을 했었습니다. 개발자는 얼마나 디버깅을 빨리하는지가 정말 중요하다는 것을 느끼게 해준 개발이었습니다. 소스상으로 봤을 때
