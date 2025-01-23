@@ -35,23 +35,7 @@
    
    	 그리고 상품의 속성인 대분류, 중분류, 소분류, 세분류마다 조건을 걸어 그에 해당되는 상품들을 노출시켜주었습니다.
    	  
-   
-   	 
-
-<summary><b>상품 속성별 매출 현황 소스</b></summary>
-<div align="center" markdown="1">
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/Program.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/goodsPropertiesRetrieveController.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesControllerJava.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesService.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesServiceImpl.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesProcess.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/retrieveGoodsPropertiesDAO.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/mapper1.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/mapper2.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/mapper3.png"/>
-	<img src="https://github.com/jsjang96/images/blob/2022b8a79c4369da956540a723cfdffc35a618e9/mapper4.png"/>
-</div>
+## <b>상품 속성별 매출 현황 소스</b>
 <br>
 
 ## 설명
@@ -65,9 +49,9 @@
   
   	해당하는 grid에 데이터를 뿌려주었습니다. 
    
-	그리고 Controller.java에서는 데이터를 세팅을 해주었습니다. 보시는 것과 같이 ComUtil.injFilterToArr라는 것은 아래 사진과 같이 띄어쓰기를 하면
+	그리고 Controller.java에서는 데이터를 세팅을 해주었습니다. ComUtil.injFilterToArr라는 필터링 유틸리티를 통해서 아래 사진과 같이 띄어쓰기를 하여
  
- 	상품코드나 업체코드를 구별시켜주는 필터링 유틸리티입니다. 콤마 부분로 구별해주는 것은 쿼리에서 작업을 진행했습니다.
+ 	상품코드나 업체코드를 구별시켜주었습니다. 콤마 부분로 구별해주는 것은 쿼리에서 작업을 진행했습니다.
 <img src="https://github.com/jsjang96/images/blob/5d452e8e9f6e5944b917fb27b5d8906d651eb1cd/multientpretrieve.png"/>
 <img src="https://github.com/jsjang96/images/blob/5d452e8e9f6e5944b917fb27b5d8906d651eb1cd/multigoodsproperties.png"/>
 
@@ -101,15 +85,13 @@
 
   	개발을 다 진행하고 만든 기능들을 조회했을 때 별 무리가 없다고 생각했습니다. 하지만 기간에 대한 제한을 설정하지 않고 조회할 수 있게끔 개발을
 
-    	했는데 기간을 8개월 이상으로 해서 조회를 할 때 상당히 많은 시간이 걸렸습니다. 그래서 이 때 짠 쿼리를 DB에서 먼저 조회 하고 얼만큼의 시간이
+    했는데 기간을 8개월 이상으로 해서 조회를 할 때 상당히 많은 시간이 걸렸습니다. 그래서 이 때 짠 쿼리를 DB에서 먼저 조회 하고 얼만큼의 시간이
 
-     	걸리는지 알아보고 오래 걸리면 인덱스가 타는지 안타는지도 확인하고 프로그램에 적용했을 때 개발용에서도 얼마나 걸리는지 확인을 해야한다는 것을
+    걸리는지 알아보고 오래 걸리면 인덱스가 타는지 안타는지도 확인하고 프로그램에 적용했을 때 개발용에서도 얼마나 걸리는지 확인을 해야한다는 것을
 
-      	알았습니다. 이것을 통해서 기간 제한을 6개월로 뒀습니다. 이를 통해서 여러가지의 테스트 케이스를 생각하여서 테스트를 하는 것이 얼마나 중요한지
+    알았습니다. 이것을 통해서 기간 제한을 6개월로 뒀습니다. 이를 통해서 여러가지의 테스트 케이스를 생각하여서 테스트를 하는 것이 얼마나 중요한지
 
-       	알 수 있었습니다.
-
-     	
+    알 수 있었습니다.
   	
 
 ### 2. 꼼꼼함의 중요성
