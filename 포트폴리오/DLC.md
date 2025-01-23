@@ -27,39 +27,27 @@
 <br>
 
 ## 핵심 기능
-	이 서비스의 핵심 기능은 5년 전 데이터 삭제 배치**입니다. 
+	이 서비스의 핵심 기능은 5년 전 데이터 삭제 배치입니다. 
 	
 	방송통신 법으로 인하여서 5년 전 데이터를 삭제를 해야하고 총 30개의 테이블을 대상으로 하여 5년 전 데이터를 삭제합니다.
 	
 	데이터가 어느 기간의 몇 개의 데이터가 삭제가 됐는지 진척율을 REST API를 통해 템플릿을 짜고 전송해주었습니다.
-	
-	아래는 DLC 개발에 대한 첨부파일입니다.
 
-<summary><b>DLC 프로세스</b></summary> <br>
-<div align="center" markdown="1">
-	<img src="https://github.com/jsjang96/images/blob/0e352c49eac92d566f1e8dc58feeb66604784e10/CUR_TG_DATA.png"/>
-	<img src="https://github.com/jsjang96/images/blob/0e352c49eac92d566f1e8dc58feeb66604784e10/DLCCheck.png"/>
-	<img src="https://github.com/jsjang96/images/blob/0e352c49eac92d566f1e8dc58feeb66604784e10/DLC_KEY_DT_COLLECT.png"/>
-	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/CUR_DL_DATA.png"/>
-</div>
-
-	위 사진들을 통해 봤을 때 주문 날짜를 기준으로 5년 전의 데이터들을 여러 검증을 한 후에 MNT_COL_DT라는 테이블에 INSERT를 하여 수집을 하였습니다.
+	임시상품코드, 주문번호, 배송식별번호를 기준으로 5년 전의 데이터들을 여러 검증을 한 후에 MNT_COL_DT라는 테이블에 INSERT를 하여 수집을 하였습니다.
 	
 	후에 MNT_COL_DT에 있는 수집한 데이터들을 MOD함수를 통하여서 개수를 분산화하여 삭제를 진행해주는 커서를 작성하였습니다.
 	
 	테이블 데이터 삭제를 하기 전에 SALE_TEST라는 계정에 삭제 대상 테이블을 똑같이 생성하여 백업을 시킨 후에 실제로 쓰이고 있는 테이블의 데이터를 삭제했습니다.
 	
-	이 코드는 주문번호(ORDER_NO)를 쓰고있는 테이블들의 데이터를 지운것이고 배송식별번호, 임시상품코드를 기준으로 하여서도 삭제 프로시저를 개발하여 삭제했습니다.
-	
-	다음 사진들은 DLC의 진척율을 매일 담당자에게 이메일을 보내는 REST API 개발 건이고 소스와 실제 이메일을 보내는 템플릿입니다.
+	다음 사진은 DLC의 진척율을 매일 담당자에게 이메일을 보내는 REST API 개발한 이메일 템플릿입니다.
 
 <div align="center" markdown="1">
-	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressSource.png"/>
-	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressSource2.jpg"/>
-	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressSource3.png"/>
-	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressSourceQuery.png"/>
 	<img src="https://github.com/jsjang96/images/blob/d04859a68b125e8748551b29bc58c77119195aae/DLCProgressEmail.png"/>
 </div>
+
+	위의 사진은 년도별로 임시상품코드, 주문번호, 배송식별번호를 기준으로 데이터를 삭제한 진척율을 저를 포함한 담당자들에게 매일 이메일을 보내주는
+ 
+ 	템플릿입니다.
 
 <br>
 
